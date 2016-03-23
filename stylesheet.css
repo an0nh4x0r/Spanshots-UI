@@ -4,14 +4,6 @@
     font-size: 25px;
 }
 
-.mdl-layout__header{
-    height: 110px;
-}
-
-.mdl-layout__header--waterfall-hide-top{
-    height: 105px;
-}
-
 .mdl-layout__tab{
     font-stretch: expanded;
     font-size: medium;
@@ -70,7 +62,11 @@
     margin-bottom: 20px;
 }
 
-#loading_spinner{
+.loading_spinner{
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.feed_card{
+    margin-top: 50px;
 }
