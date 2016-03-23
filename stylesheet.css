@@ -1,8 +1,10 @@
 #spanshots{
     font-family: Pacifico, serif;
     margin-left: -50px;
+    margin-top: -8px;
 }
 
 .mdl-layout__tab{
-    font-weight: 700;
+    font-size: larger;
+    font-weight: bold;
 }
