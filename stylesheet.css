@@ -5,10 +5,14 @@
 }
 
 .mdl-layout__header{
-    height: 100px;
+    height: 110px;
 }
 
 .mdl-layout__header--waterfall-hide-top{
     height: 105px;
 }
 
+.mdl-layout__tab{
+    font-stretch: expanded;
+    font-size: medium;
+}
