@@ -16,3 +16,40 @@
     font-stretch: expanded;
     font-size: medium;
 }
+
+#spanner_profile_pic{
+    height: 150px;
+    width: 150px;
+    border-radius: 600px;
+    -webkit-border-radius: 600px;
+    -moz-border-radius: 600px;
+    margin-top: 20px;
+}
+
+#spanner_follower_card{
+    width: 500px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+#spanner_profile_pic--caption{
+    font-weight: bold;
+    margin-left: 27px;
+}
+
+@media only screen and (max-width: 650px) {
+    #spanner_profile_pic{
+        height: 75px;
+        width: 75px;
+        border-radius: 600px;
+        -webkit-border-radius: 600px;
+        -moz-border-radius: 600px;
+        margin-top: 20px;
+        margin-left: 14px;
+    }
+
+    #spanner_profile_pic--caption{
+        font-weight: bold;
+        margin-left: 10px;
+    }
+}
