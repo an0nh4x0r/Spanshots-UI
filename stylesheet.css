@@ -1,10 +1,14 @@
 #spanshots{
     font-family: Pacifico, serif;
     margin-left: -50px;
-    margin-top: -8px;
+    margin-top: 8px;
 }
 
-.mdl-layout__tab{
-    font-size: larger;
-    font-weight: bold;
+.mdl-layout__header{
+    height: 100px;
 }
+
+.mdl-layout__header--waterfall-hide-top{
+    height: 105px;
+}
+
