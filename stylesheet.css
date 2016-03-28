@@ -70,3 +70,7 @@
 .feed_card{
     margin-top: 50px;
 }
+
+.mdl-layout__header--waterfall{
+    overflow: visible;
+}
