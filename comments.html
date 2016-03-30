@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comments for Spanshots</title>
+    <link rel="stylesheet" href="mdl/material.blue-cyan.min.css">
+    <script src="mdl/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <style>
+        #text_field_spanner{
+            margin-right: 100px;
+            margin-top: -8px;
+        }
+
+        #button_comment_spanner{
+            margin-right: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mdl-grid mdl-grid--no-spacing">
+        <div class="mdl-layout-spacer"></div>
+
+        <ul id="comment_unordered_list" class="demo-list-three mdl-list">
+            <li class="mdl-list__item mdl-list__item--three-line">
+                <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">person</i>
+                  <span>Bryan Cranston</span>
+                  <span class="mdl-list__item-text-body">
+                    Bryan Cranston played the e Middle.
+                  </span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                  <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">more_vert</i></a>
+                </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line">
+	            <span class="mdl-list__item-primary-content">
+                  <i class="material-icons  mdl-list__item-avatar">person</i>
+                  <span>Aaron Paul</span>
+                  <span class="mdl-list__item-text-body">
+                    Aaron Paul played the rol the "Need For Speed" Movie.
+                  </span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                  <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">more_vert</i></a>
+                </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line">
+                <span class="mdl-list__item-primary-content">
+                    <i class="material-icons  mdl-list__item-avatar">person</i>
+                    <span>Bob Odenkirk</span>
+                    <span class="mdl-list__item-text-body">
+                        Bob Odinkrik played the role of Saul in Breaking Bad. Due to public fondnes
+                    </span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                  <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">more_vert</i></a>
+                </span>
+            </li>
+
+            <li id="text_field_area" class="mdl-list__item mdl-list__item--three-line">
+	            <span class="mdl-list__item-primary-content">
+	            <i class="material-icons  mdl-list__item-avatar">person</i></span>
+                    <span class="mdl-list__item-text-body">
+                        <div id="text_field_spanner" class="mdl-textfield mdl-js-textfield">
+                            <input autocomplete="off" class="mdl-textfield__input" type="text" id="comment-text">
+                            <label class="mdl-textfield__label" for="comment-text">Add comment</label>
+                        </div>
+                        <button id="button_comment_spanner" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Comment</button>
+                    </span>
+            </li>
+        </ul>
+
+        <div class="mdl-layout-spacer"></div>
+    </div>
+
+    <script>
+        var comment_button = document.getElementById("button_comment_spanner"),
+                text_field = document.getElementById("comment-text"),
+                unordered_list = document.getElementById("comment_unordered_list"),
+                area = document.getElementById("text_field_area");
+
+        comment_button.onclick = function () {
+            if (text_field.value.trim() != ""){
+                var el = document.createElement("li");
+                el.className = "mdl-list__item mdl-list__item--three-line";
+                el.innerHTML = "<span class=\"mdl-list__item-primary-content\">" +
+                                "<i class=\"material-icons  mdl-list__item-avatar\">person</i><span>Swapnil Singh</span><span class=\"mdl-list__item-text-body\">" + text_field.value.trim() + " </span>"
+                                + "</span><span class=\"mdl-list__item-secondary-content\"><a class=\"mdl-list__item-secondary-action\" href=\"#\"><i class=\"material-icons\">more_vert</i></a></span>";
+                unordered_list.insertBefore(el, area);
+                text_field.value = "";
+            }
+        }
+    </script>
+</body>
+</html>
